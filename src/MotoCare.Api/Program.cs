@@ -21,7 +21,7 @@ builder.Services.AddScoped<ICurrentUser, CurrentUser>();
 builder.Services.AddControllers()
     .AddJsonOptions(o =>
     {
-        // stored-procedure rows are dictionaries; camelCase their keys like normal DTO properties
+        // stored-procedure rows are dictionaries; camelCase their keys like normal DTO properties hhhh
         o.JsonSerializerOptions.DictionaryKeyPolicy = JsonNamingPolicy.CamelCase;
     })
     .ConfigureApiBehaviorOptions(o =>
