@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MotoCare.Application\MotoCare.Application.csproj" />
+    <ProjectReference Include="..\MotoCare.Infrastructure\MotoCare.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.8" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+  <!-- Added: company logo used on PDF bills / payslips / quotations -->
+  <ItemGroup>
+    <None Update="Assets\logo.png" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
